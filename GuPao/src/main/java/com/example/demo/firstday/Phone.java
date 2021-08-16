@@ -1,6 +1,6 @@
 package com.example.demo.firstday;
 
-public class Phone implements Shop {
+public class Phone implements ElectronicShop {
 
     @Override
     public void sold() {

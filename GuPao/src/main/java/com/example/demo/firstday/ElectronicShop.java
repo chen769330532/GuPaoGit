@@ -1,6 +1,6 @@
 package com.example.demo.firstday;
 
-public interface Shop {
+public interface ElectronicShop {
 
     void sold();
 }
