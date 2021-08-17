@@ -1,4 +1,4 @@
-package com.example.demo.secondday.proxy;
+package com.example.demo.secondday.proxy.v1;
 
 public class Proxy implements IProxy{
 
