@@ -21,6 +21,8 @@ public class CglibProxy implements MethodInterceptor {
 
     }
 
+    //代理类要继承我们的代理类,生成的.class文件比较多.所以生成的时候比较慢,但是基于fassclass机制,所以直接通过index下标找到代理类,所以速度比较快
+
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         before();

@@ -22,6 +22,9 @@ public class JDKProxy implements InvocationHandler {
         return (IProxy) Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
     }
 
+    //被代理的类必须实现接口,因为生成的代理类要去实现被代理类实现的接口
+    //生成的类文件比较少,然后生成时快,调用的时候慢
+    //可以代理接口
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         before();
