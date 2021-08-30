@@ -1,1 +1,4 @@
-
+mybatis:
+  config-location:
+  configuration:
+    cache-enabled:
